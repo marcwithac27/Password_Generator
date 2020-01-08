@@ -39,7 +39,7 @@ generate.addEventListener('click', () => {
 });
 
 function generatePassword(lower, upper, number, symbol, length) {
-	let generatedPassword = '';
+	var generatedPassword = '';
 	var typesCount = lower + upper + number + symbol;
 	var typesArr = [{lower}, {upper}, {number}, {symbol}].filter(item => Object.values(item)[0]);
 	
